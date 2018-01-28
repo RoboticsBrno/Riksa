@@ -19541,7 +19541,7 @@ ultra fast-recovery rectifier</description>
 <attribute name="NAME" x="97.79" y="16.7386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="107.95" y="17.018" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="15.24" y="86.36" rot="R90"/>
+<instance part="LED1" gate="G$1" x="17.78" y="86.36" rot="R270"/>
 <instance part="GND3" gate="1" x="10.16" y="81.28" rot="MR0"/>
 <instance part="P+7" gate="1" x="25.4" y="71.12" rot="MR0"/>
 <instance part="+3V1" gate="G$1" x="25.4" y="55.88" rot="R180"/>
@@ -19562,10 +19562,10 @@ ultra fast-recovery rectifier</description>
 <attribute name="NAME" x="55.88" y="134.1374" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="48.768" y="134.1374" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D3" gate="1" x="50.8" y="119.38" smashed="yes">
-<attribute name="OC_FARNELL" x="50.8" y="119.38" size="2.54" layer="96" display="off"/>
-<attribute name="NAME" x="55.88" y="118.8974" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="48.768" y="118.8974" size="1.778" layer="96" rot="R180"/>
+<instance part="D3" gate="1" x="50.8" y="119.38" smashed="yes" rot="R180">
+<attribute name="OC_FARNELL" x="50.8" y="119.38" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="45.72" y="119.8626" size="1.778" layer="95"/>
+<attribute name="VALUE" x="52.832" y="119.8626" size="1.778" layer="96"/>
 </instance>
 <instance part="P+12" gate="VCC" x="60.96" y="152.4" rot="MR90"/>
 <instance part="GND13" gate="1" x="60.96" y="139.7" rot="R90"/>
@@ -19578,10 +19578,10 @@ ultra fast-recovery rectifier</description>
 <attribute name="NAME" x="55.88" y="154.4574" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="48.768" y="154.4574" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D6" gate="1" x="50.8" y="139.7" smashed="yes">
-<attribute name="OC_FARNELL" x="50.8" y="139.7" size="2.54" layer="96" display="off"/>
-<attribute name="NAME" x="55.88" y="139.2174" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="48.768" y="139.2174" size="1.778" layer="96" rot="R180"/>
+<instance part="D6" gate="1" x="50.8" y="139.7" smashed="yes" rot="R180">
+<attribute name="OC_FARNELL" x="50.8" y="139.7" size="2.54" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="45.72" y="140.1826" size="1.778" layer="95"/>
+<attribute name="VALUE" x="52.832" y="140.1826" size="1.778" layer="96"/>
 </instance>
 <instance part="R15" gate="G$1" x="139.7" y="147.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="138.2014" y="143.51" size="1.778" layer="95" rot="R90"/>
@@ -19616,8 +19616,8 @@ ultra fast-recovery rectifier</description>
 <attribute name="NAME" x="31.75" y="110.7186" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="31.75" y="105.918" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="LED2" gate="G$1" x="15.24" y="99.06" rot="R90"/>
-<instance part="LED3" gate="G$1" x="15.24" y="109.22" rot="R90"/>
+<instance part="LED2" gate="G$1" x="17.78" y="99.06" rot="R270"/>
+<instance part="LED3" gate="G$1" x="17.78" y="109.22" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -19712,7 +19712,6 @@ ultra fast-recovery rectifier</description>
 <segment>
 <wire x1="71.12" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="119.38" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="124.46" x2="45.72" y2="119.38" width="0.1524" layer="91"/>
 <junction x="45.72" y="124.46"/>
 <wire x1="45.72" y1="124.46" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
@@ -19720,7 +19719,8 @@ ultra fast-recovery rectifier</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 <label x="71.12" y="124.46" size="1.778" layer="95" rot="MR0"/>
 <pinref part="D2" gate="1" pin="A"/>
-<pinref part="D3" gate="1" pin="A"/>
+<pinref part="D3" gate="1" pin="C"/>
+<wire x1="48.26" y1="119.38" x2="45.72" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
@@ -19742,7 +19742,6 @@ ultra fast-recovery rectifier</description>
 <segment>
 <wire x1="71.12" y1="144.78" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="144.78" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="139.7" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="144.78" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
 <junction x="45.72" y="144.78"/>
 <wire x1="45.72" y1="144.78" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
@@ -19750,7 +19749,8 @@ ultra fast-recovery rectifier</description>
 <pinref part="R14" gate="G$1" pin="1"/>
 <label x="71.12" y="144.78" size="1.778" layer="95" rot="MR0"/>
 <pinref part="D5" gate="1" pin="A"/>
-<pinref part="D6" gate="1" pin="A"/>
+<pinref part="D6" gate="1" pin="C"/>
+<wire x1="45.72" y1="139.7" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0_POT_LEFT" class="0">
@@ -19980,28 +19980,28 @@ ultra fast-recovery rectifier</description>
 <junction x="251.46" y="144.78"/>
 </segment>
 <segment>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="58.42" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="D3" gate="1" pin="C"/>
-</segment>
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="12.7" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="86.36" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="10.16" y1="83.82" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="10.16" y1="86.36" x2="10.16" y2="99.06" width="0.1524" layer="91"/>
-<junction x="10.16" y="86.36"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="10.16" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="99.06" x2="10.16" y2="109.22" width="0.1524" layer="91"/>
-<junction x="10.16" y="99.06"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="10.16" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="12.7" y1="99.06" x2="10.16" y2="99.06" width="0.1524" layer="91"/>
+<junction x="10.16" y="99.06"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="12.7" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<junction x="10.16" y="86.36"/>
 </segment>
 <segment>
+<pinref part="D6" gate="1" pin="A"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="58.42" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="D6" gate="1" pin="C"/>
+<wire x1="53.34" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D3" gate="1" pin="A"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="53.34" y1="119.38" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MPU_SCL" class="0">
@@ -20563,27 +20563,6 @@ ultra fast-recovery rectifier</description>
 <wire x1="33.02" y1="144.78" x2="30.48" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED_GREEN_" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LED_YELLOW_" class="0">
-<segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LED_RED_" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="LED_RED" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
@@ -20600,6 +20579,27 @@ ultra fast-recovery rectifier</description>
 <wire x1="35.56" y1="106.68" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="22.86" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
